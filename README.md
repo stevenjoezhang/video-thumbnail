@@ -1,8 +1,9 @@
 # Video Thumbnail
-Create video thumbnails using shell, ffmpeg and python (support python2 and python3).  
-基于shell, ffmpeg和python创建视频在不同时间的截图，并将它们合成一张缩略图。
+Create video thumbnails using ffmpeg and python (support both python2 and 3).  
+基于ffmpeg和python创建视频在不同时间的截图，并将它们合成一张缩略图。
 
 **Note**: Support \*nix systems only.
+
 ## Requirements
 ffmpeg and python are required. You can use `apt-get`, `yum` or `brew` to install them.
 
@@ -14,8 +15,12 @@ cd video-thumbnail
 
 ## Run
 ```bash
-sudo chmod +x ffmpeg.sh
-bash ffmpeg.sh /path/to/example.mp4
+python run.py /path/to/example.mp4
+```
+or
+
+```bash
+bash run.sh /path/to/example.mp4
 ```
 
 ## Usage
