@@ -1,4 +1,4 @@
-#！/bin/bash
+#!/bin/bash
 
 time=$(ffmpeg -i $1 2>&1|grep 'Duration'|cut -d ' ' -f 4|sed s/,//);
 view=$(ffmpeg -i $1 2>&1|grep 'Video:'|sed 's/.*\,.\(.*x[0-9]\{1,\}\).*/\1/g');

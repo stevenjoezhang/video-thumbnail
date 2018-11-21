@@ -1,6 +1,6 @@
+#!/usr/bin/env python
 #-*- coding:utf-8 -*-
-import os
-import re
+import os, re
 from sys import argv
 from image import *
 
