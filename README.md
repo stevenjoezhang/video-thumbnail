@@ -1,6 +1,6 @@
 # Video Thumbnail
 
-Create video thumbnails using ffmpeg and python (support both python2 and 3).  
+Creating video thumbnails, based on ffmpeg and python (support both python2 and 3).  
 基于ffmpeg和python创建视频在不同时间的截图，并将它们合成一张缩略图。
 
 ## Requirements
@@ -33,3 +33,6 @@ You may edit the files yourself. For example, you can change the value of `width
 ## License
 Released under the GNU General Public License v3  
 http://www.gnu.org/licenses/gpl-3.0.html
+
+## Demo
+![](sample.jpg)
