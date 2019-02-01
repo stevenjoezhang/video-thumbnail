@@ -1,5 +1,5 @@
-#!/usr/bin/env python
-#-*- coding:utf-8 -*-
+#!/usr/bin/env python3
+
 from PIL import Image
 from sys import argv
 
@@ -20,8 +20,8 @@ def createThumbnail(first, second):
 
 	for i in range(0, pic_max): 
 
-		pic_fole_head =  Image.open(all_path[i])
-		width, height =  pic_fole_head.size
+		pic_fole_head = Image.open(all_path[i])
+		width, height = pic_fole_head.size
 		
 		tmppic = pic_fole_head.resize((width_i, height_i))
 		
@@ -31,10 +31,9 @@ def createThumbnail(first, second):
 		toImage.paste(tmppic, loc)
 
 	#print(toImage.size)
-	toImage.save("./" + first + "/" + "thumbnails.jpg")
+	toImage.save("./" + first + "/thumbnails.jpg")
 	print("All done, have fun :)")
 
 if __name__ == "__main__":
 	script, first, second = argv
-	#print("the first variable is:", first)
 	createThumbnail(first, second)
