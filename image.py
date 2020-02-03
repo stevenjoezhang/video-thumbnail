@@ -13,25 +13,25 @@ def createThumbnail(first, second):
 	pic_max = 50
 
 	for i in range(0, pic_max):
-		all_path.append("./" + first + "/" + str(i) + ".jpg")
+		all_path.append(first + "/" + str(i) + ".jpg")
 		#print(str(i)+".jpg")
 
 	toImage = Image.new("RGB", (width_i, height_i * pic_max))
 
-	for i in range(0, pic_max): 
+	for i in range(0, pic_max):
 
 		pic_fole_head = Image.open(all_path[i])
 		width, height = pic_fole_head.size
-		
+
 		tmppic = pic_fole_head.resize((width_i, height_i))
-		
+
 		loc = (0, int(i * height_i))
-		
+
 		#print("第" + str(num) + "存放位置" + str(loc))
 		toImage.paste(tmppic, loc)
 
 	#print(toImage.size)
-	toImage.save("./" + first + "/thumbnails.jpg")
+	toImage.save(first + "/thumbnails.jpg")
 	print("All done, have fun :)")
 
 if __name__ == "__main__":

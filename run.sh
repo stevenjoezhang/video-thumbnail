@@ -12,12 +12,12 @@ seconds=$(echo $time|cut -d ':' -f 3);
 duration=$(echo $hours*3600+$minutes*60+$seconds|bc);
 echo $duration;
 #mkdir thumbnails;
-dir=$(echo $1|cut -d '.' -f 1)
-mkdir $dir;
+dirname=$(echo $1|cut -d '.' -f 1)
+mkdir $dirname;
 for((i=0;i<50;i++));
 do
 #echo $(expr $i \* 3 + 1);
 temp=$(echo $duration*$i/50|bc);
-ffmpeg -ss $temp -i $1 -y -f mjpeg -t 0.001 -s 320x$height ./$dir/$i.jpg
+ffmpeg -ss $temp -i $1 -y -f mjpeg -t 0.001 -s 320x$height $dirname/$i.jpg
 done
-python image.py $dir $height;
+python3 image.py $dirname $height;

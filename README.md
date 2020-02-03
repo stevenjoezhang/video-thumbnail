@@ -1,6 +1,7 @@
 # Video Thumbnail
 
-基于ffmpeg和Python3创建视频在不同时间的截图，并将它们合成一张缩略图。  
+https://github.com/kkroening/ffmpeg-python
+基于 ffmpeg 和 Python3 创建视频在不同时间的截图，并将它们合成一张缩略图。  
 Creating video thumbnails, based on ffmpeg and Python (support Python3 only).
 
 ## Requirements
