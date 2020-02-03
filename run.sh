@@ -18,6 +18,6 @@ for((i=0;i<50;i++));
 do
 #echo $(expr $i \* 3 + 1);
 temp=$(echo $duration*$i/50|bc);
-ffmpeg -ss $temp -i $1 -y -f mjpeg -t 0.001 -s 320x$height $dirname/$i.jpg
+ffmpeg -ss $temp -i $1 -y -frames:v 1 -s 320x$height $dirname/$i.jpg
 done
 python3 image.py $dirname $height;

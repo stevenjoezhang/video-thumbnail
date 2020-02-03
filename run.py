@@ -28,6 +28,6 @@ for i in range(50):
 
 	#echo $(expr $i \* 3 + 1)
 	temp = int(duration * i / 50)
-	system("ffmpeg -ss " + str(temp) + " -i " + name + " -y -f mjpeg -t 0.001 -s 320x" + str(height) + " " + dirname + "/" + str(i) + ".jpg")
+	system("ffmpeg -ss " + str(temp) + " -i " + name + " -y -frames:v 1 -s 320x" + str(height) + " " + dirname + "/" + str(i) + ".jpg")
 
 createThumbnail(dirname, height)

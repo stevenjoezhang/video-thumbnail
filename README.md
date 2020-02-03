@@ -1,6 +1,5 @@
 # Video Thumbnail
 
-https://github.com/kkroening/ffmpeg-python
 基于 ffmpeg 和 Python3 创建视频在不同时间的截图，并将它们合成一张缩略图。  
 Creating video thumbnails, based on ffmpeg and Python (support Python3 only).
 
@@ -38,6 +37,10 @@ You may edit the files yourself. For example, you can change the value of `width
 
 Released under the GNU General Public License v3  
 http://www.gnu.org/licenses/gpl-3.0.html
+
+## Todo
+
+Use https://github.com/kkroening/ffmpeg-python
 
 ## Demo
 
